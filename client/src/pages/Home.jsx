@@ -9,7 +9,7 @@ import Footer from "../components/Footer/Footer"
 function Home() {
   return (
     <>
-      <div className='m-2 bg-brand-neutral'>
+      <div className='m-2'>
         <Hero />
         <About />
         <WhyJoin />
