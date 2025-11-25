@@ -4,7 +4,7 @@ import { Book, Bell, Sparkles, Clock } from "lucide-react";
 function About() {
   return (
     <>
-      <section className="mt-5 py-20 bg-brand-primary text-white flex flex-col justify-center md:flex-row md:justify-between md:items-start md:gap-10 px-5">
+      <section className="mt-15 py-20 bg-brand-primary text-white flex flex-col justify-center md:flex-row md:justify-between md:items-start md:gap-10 px-5">
         {/**about */}
         <div className="max-w-[600px]  w-full md:w-1/2 md:mx-0 mx-auto text-center ">
           <h1 className="font-bold text-2xl mb-2">
