@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from "../components/Home/Hero"
-import About from "../components/Home/About"
-import WhyJoin from "../components/Home/WhyJoin"
+import About from "../components/Home/About";
+import Gallery from "../components/Home/Gallery"
 import CTA from "../components/Home/CTA";
 import Footer from "../components/Footer/Footer"
 
@@ -12,7 +12,7 @@ function Home() {
       <div className='m-2'>
         <Hero />
         <About />
-        <WhyJoin />
+        <Gallery/>
         <CTA />
         <Footer />
       </div>
