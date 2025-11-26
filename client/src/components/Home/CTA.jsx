@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 function CTA() {
@@ -22,7 +23,8 @@ function CTA() {
             unity, and love.
           </p>
 
-          <button
+          <Link 
+          to={"/register"}
             className="mt-6 inline-flex items-center gap-2 px-7 py-4 rounded-full 
             bg-brand-secondary text-brand-primary text-xl font-semibold 
             shadow-lg hover:shadow-xl transition-all duration-300 
@@ -30,7 +32,7 @@ function CTA() {
           >
             Register and Join
             <ArrowRight className="w-6 h-6" />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

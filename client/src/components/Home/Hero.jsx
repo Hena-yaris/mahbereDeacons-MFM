@@ -1,5 +1,7 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import heroImage from "../../assets/img/i1.webp";
 
 export default function Hero() {
@@ -54,16 +56,16 @@ export default function Hero() {
           </p>
 
           {/* 4. CTA BUTTON */}
-          <a
-            href="#"
-            className="
-              text-brand-primary font-bold rounded-full bg-brand-secondary 
-              px-8 py-4 shadow-xl transition duration-300 
-              hover:bg-white hover:scale-[1.02] hover:shadow-2xl 
-            "
-          >
-            Register Now
-          </a>
+          <Link 
+                    to={"/register"}
+                      className="mt-6 inline-flex items-center gap-2 px-7 py-4 rounded-full 
+                      bg-brand-secondary text-brand-primary text-xl font-semibold 
+                      shadow-lg hover:shadow-xl transition-all duration-300 
+                      hover:scale-[1.06] focus:ring-4 focus:ring-brand-secondary/40"
+                    >
+                      Register and Join
+                      <ArrowRight className="w-6 h-6" />
+                    </Link>
         </div>
       </section>
     </div>

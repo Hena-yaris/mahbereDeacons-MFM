@@ -4,7 +4,7 @@ import { Facebook, Instagram, Mail, Phone, HeartHandshake } from "lucide-react";
 function Footer() {
   return (
     // 1. Footer Container: Added subtle shadow for lift and increased padding
-    <footer className="bg-brand-primary text-white py-16 mt-20 shadow-inner">
+    <footer className="bg-brand-primary text-white py-16 shadow-inner">
       <div className="max-w-[1100px] mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-10">
         {" "}
         {/* ⬅️ Changed to 4 columns for balance */}
