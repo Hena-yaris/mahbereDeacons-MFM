@@ -15,7 +15,7 @@ function Footer() {
           <h2 className="text-3xl font-extrabold flex items-center gap-2 text-brand-secondary">
             {" "}
             {/* ⬅️ Gold accent on Title */}
-            <HeartHandshake className="w-8 h-8" /> College Deacons Fellowship
+            <HeartHandshake className="w-8 h-8" /> MFM ማህበረ ዲያቆናት
           </h2>
           <p className="text-white/70 mt-4 text-sm max-w-sm">
             Serving with purpose, unity, and spiritual devotion, guided by the

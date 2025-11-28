@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer/Footer";
+import MultiSelect from "../components/MultiSelect";
 
 // Accordion Section Component (Styled for Premium Look)
 function AccordionSection({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
+
 
   return (
     
@@ -37,6 +39,12 @@ function AccordionSection({ title, children }) {
 }
 
 function Registration() {
+    // const [age, setAge] = useState([]);
+    const [kutrNbab, setKutrNbab] = useState([]);
+    const [dawitNban, setDawitNbab] = useState([]);
+    const [zema, setZema] = useState([]);
+
+
   return (
     <div>
       <section className="min-h-screen bg-gray-100 py-20 px-5 md:px-10">
@@ -55,8 +63,8 @@ function Registration() {
           {/* Form Title  */}
           <h2
             className="
-              flex items-center gap-3 
-              text-2xl md:text-3xl font-extrabold 
+              flex items-center justify-between gap-3 
+              text-2xl md:text-3xl font-bold 
               text-brand-primary 
               bg-white 
               px-5 py-3 
@@ -70,11 +78,20 @@ function Registration() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-7 h-7 text-brand-secondary" 
+              className="w-7 h-7 text-brand-secondary"
             >
               <path d="M12 2L9.5 5H11v4H7V7.5L4 10l3 2.5V11h4v4H9.5L12 18l2.5-3H13v-4h4v1.5L20 10l-3-2.5V9h-4V5h1.5L12 2z" />
             </svg>
             Fullfill All This Information
+            {/* Ethiopian Orthodox Cross */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-7 h-7 text-brand-secondary"
+            >
+              <path d="M12 2L9.5 5H11v4H7V7.5L4 10l3 2.5V11h4v4H9.5L12 18l2.5-3H13v-4h4v1.5L20 10l-3-2.5V9h-4V5h1.5L12 2z" />
+            </svg>
           </h2>
 
           {/* Personal Info */}
@@ -82,7 +99,7 @@ function Registration() {
             <input
               type="text"
               placeholder="Full Name"
-              className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:border-brand-secondary mb-3 transition duration-200" 
+              className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:border-brand-secondary mb-3 transition duration-200"
             />
             <input
               type="email"
@@ -110,18 +127,34 @@ function Registration() {
             />
           </AccordionSection>
 
-          {/* Spiritual Knowledge / Skills*/}
+          {/* Spiritual Knowledge / Skills Section */}
           <AccordionSection title="Spiritual Knowledge / Skills">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-48 overflow-y-auto text-sm">
-              <label className="flex items-center gap-2 cursor-pointer hover:text-brand-primary/80 transition duration-200">
-                <input
-                  type="checkbox"
-                  className="form-checkbox w-5 h-5 text-brand-secondary rounded focus:ring-brand-secondary"
-                />
-                Daily Readings
-              </label>
-              {/* ... Apply similar styling to all checkboxes ... */}
-            </div>
+            <MultiSelect
+              label="ቁጥር ንባብ"
+              options={["ውዳሴ ማርያም", "አንቀጸ ብርሃን", "መልክአ ማርያም", "መልክአ ኢየሱስ"]}
+              selected={kutrNbab}
+              setSelected={setKutrNbab}
+            />
+            <MultiSelect
+              label="ንባብ"
+              options={["መዝሙረ ዳዊት", "ወንጌል"]}
+              selected={dawitNban}
+              setSelected={setDawitNbab}
+            />
+            <MultiSelect
+              label="ዜማ"
+              options={[
+                "ውዳሴ ማርያም",
+                "ቅዳሴ/ግብረ ዲቁና",
+                "ሰአታት",
+                "ክስተት",
+                "አርያም",
+                "ጾመ ድጓ",
+                "መልክአ መልክ",
+              ]}
+              selected={zema}
+              setSelected={setZema}
+            />
           </AccordionSection>
 
           {/* Optional Open Text */}
