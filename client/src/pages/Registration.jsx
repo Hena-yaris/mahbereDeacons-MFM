@@ -287,7 +287,6 @@ function Registration() {
             ተፈሣህኩ እስመ ይቤሉኒ ቤተ-<span className="text-red-500">-እግዚአብሔር</span> ነሐውር፡፡
           </h1>
           <p className="text-lg text-brand-primary/80 md:text-xl mt-3 font-medium">
-            {/* Grow in faith, unity, and service. */}
             ኢትዝክር ለነ አበሳነ ዘትካት ፣ ፍጡነ ይርከበነ ሣህልከ እግዚኦ ፣ እስመ ተመንደብነ ፈድፋደ።
           </p>
         </div>
