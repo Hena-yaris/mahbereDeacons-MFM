@@ -284,10 +284,11 @@ function Registration() {
         {/* Hero Header */}
         <div className="text-center px-5 mb-16 shadow-lg bg-white/90 py-8 rounded-2xl max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold text-brand-primary">
-            ተፈሳህኩ እስመ ይቤሉኒ ቤተእግዚአብሄር ነሃውር፡፡
+            ተፈሣህኩ እስመ ይቤሉኒ ቤተ-<span className="text-red-500">-እግዚአብሔር</span> ነሐውር፡፡
           </h1>
           <p className="text-lg text-brand-primary/80 md:text-xl mt-3 font-medium">
-            Grow in faith, unity, and service.
+            {/* Grow in faith, unity, and service. */}
+            ኢትዝክር ለነ አበሳነ ዘትካት ፣ ፍጡነ ይርከበነ ሣህልከ እግዚኦ ፣ እስመ ተመንደብነ ፈድፋደ።
           </p>
         </div>
 
