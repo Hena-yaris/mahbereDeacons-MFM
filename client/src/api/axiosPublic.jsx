@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const axiosPublic = axios.create({
-  baseURL: "http://localhost:5000/api", // all requests will start from /api/admin
+  baseURL: import.meta.env.VITE_PUBLIC_API,
 });
 
-export default axiosPublic
+
+export default axiosPublic;
