@@ -57,19 +57,3 @@ exports.registerDeacons = async (req, res) => {
   }
 };
 
-
-exports.getAllUsers = async (req,res)=> {
-  try {
-    
-  } catch (error) {
-    
-  }
-}
-
-exports.deleteUsers = async (req,res)=> {
-  try {
-    
-  } catch (error) {
-    
-  }
-}

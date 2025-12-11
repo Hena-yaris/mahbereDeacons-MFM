@@ -4,7 +4,6 @@ const router = express.Router();
 const {
   registerDeacons,
 } = require("../controllers/userController");
-
 router.post("/register", registerDeacons);
 
 
