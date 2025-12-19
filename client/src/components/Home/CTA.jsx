@@ -15,7 +15,7 @@ function CTA() {
         {/* Content */}
         <div className="relative">
           <h2 className="text-3xl font-bold text-brand-primary">
-            Join the Fellowship Today
+            Join the ዲያቆናት Today
           </h2>
 
           <p className="text-brand-primary/70 mt-3">
@@ -30,7 +30,7 @@ function CTA() {
             shadow-lg hover:shadow-xl transition-all duration-300 
             hover:scale-[1.06] focus:ring-4 focus:ring-brand-secondary/40"
           >
-            Register and Join
+            ንዑ ተጋብኡ
             <ArrowRight className="w-6 h-6" />
           </Link>
         </div>
