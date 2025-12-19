@@ -52,12 +52,11 @@ function Footer() {
           {/* ⬅️ Changed title and added gold underline */}
           <ul className="space-y-3 text-white/80">
             <li className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-brand-secondary" /> +251 900 000
-              000
+              <Phone className="w-5 h-5 text-brand-secondary" /> +251 932096925/0901555818
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-brand-secondary" />{" "}
-              fellowship@email.com
+              mfmmahbereDeacons@gmail.com
             </li>
           </ul>
           {/* 2. Social Media Icons (Prominent) */}
